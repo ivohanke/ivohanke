@@ -1,0 +1,64 @@
+<script type="text/processing">
+  float xpos1;
+  float xpos2;
+  float xpos3;
+  float xpos4;
+  float xpos5;
+  float xpos6;
+  int thin = 8;
+  int thick = 36;
+
+  void setup()
+  {
+    size(640, 360);
+    noStroke();
+    xpos1 = width/2;
+    xpos2 = 0;
+    xpos3 = width;
+    xpos4 = width/2;
+    xpos5 = width;
+    xpos6 = 0;
+  }
+
+  void draw()
+  {
+    // background(51, 51, 51);
+
+    // float mx = mouseX * 0.4 - width/10.0;
+    float mx = width/25.0;
+
+    fill(235, 75, 120);
+    rect(xpos1, 0, thin, height);
+    fill(255, 224, 82);
+    rect(xpos2, 0, thick, height);
+    fill(51, 51, 51);
+    rect(xpos3, 0, thin, height);
+    fill(255, 224, 82);
+    rect(xpos4, 0, thick, height);
+    fill(235, 75, 120);
+    rect(xpos5, 0, thin, height);
+    fill(85, 9, 105);
+    rect(xpos6, 0, thick, height);
+
+    xpos1 += mx/16;
+    xpos2 += mx/64;
+    xpos3 -= mx/16;
+    xpos4 -= mx/64;
+    xpos5 += mx/16;
+    xpos6 += mx/64;
+
+    if(xpos1 < -thin)  { xpos1 =  width; }
+    if(xpos1 >  width) { xpos1 = -thin; }
+    if(xpos2 < -thick) { xpos2 =  width; }
+    if(xpos2 >  width) { xpos2 = -thick; }
+    if(xpos3 < -thin)  { xpos3 =  width; }
+    if(xpos3 >  width) { xpos3 = -thin; }
+    if(xpos4 < -thick) { xpos4 =  width; }
+    if(xpos4 >  width) { xpos4 = -thick; }
+    if(xpos5 < -thin)  { xpos5 =  width; }
+    if(xpos5 >  width) { xpos5 = -thin; }
+    if(xpos6 < -thick) { xpos6 =  width; }
+    if(xpos6 >  width) { xpos6 = -thick; }
+  }
+</script>
+<canvas></canvas>

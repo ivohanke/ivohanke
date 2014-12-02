@@ -1,1 +1,38 @@
+@import "settings";
 
+@import "bower_components/foundation/scss/normalize";
+@import "bower_components/foundation/scss/foundation";
+
+@import "header";
+@import "canvas";
+@import "content";
+@import "sidebar";
+@import "footer";
+
+
+.full-width {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+}
+
+// html, body{
+//   background: url(images/background.png) no-repeat;
+//   background-size: 100% auto;
+// }
+
+// p{
+//   font-size: 44px;
+//   font-weight: bold;
+//   line-height: 1.2em;
+// }
+
+
+::-moz-selection { /* Code for Firefox */
+  background: $secondary-color;
+}
+
+::selection {
+  background: $secondary-color;
+}

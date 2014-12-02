@@ -1,18 +1,24 @@
-<nav class="top-bar" data-topbar role="navigation">
-  <ul class="title-area">
-    <li class="name">
-      <h1><a href="#">Ivo Hanke</a></h1>
-    </li>
-     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
-
-  <section class="top-bar-section">
-    <!-- Left Nav Section -->
-    <ul class="left">
-      <li>{{#link-to 'about'}}About{{/link-to}}</li>
-      <li>{{#link-to 'projects'}}Projects{{/link-to}}</li>
+<div class="fixed">
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1>{{#link-to 'index'}}Ivo Hanke <span class="hidden-for-small-only">| Digital Developer</span>{{/link-to}}</h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
     </ul>
-  </section>
-</nav>
-{{outlet}}
+
+    <section class="top-bar-section">
+      <ul class="left">
+        <li>{{#link-to 'clients'}}Clients{{/link-to}}</li>
+        <li>{{#link-to 'about'}}About{{/link-to}}</li>
+      </ul>
+    </section>
+  </nav>
+</div>
+
+<div class="content">
+  {{outlet}}
+</div>
+
+
+{{distance-animation}}
