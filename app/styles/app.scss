@@ -1,9 +1,9 @@
 @import "settings";
 
-@import "bower_components/foundation/scss/normalize";
-@import "bower_components/foundation/scss/foundation";
+@import "foundation";
 
 @import "header";
+@import "video";
 @import "canvas";
 @import "content";
 @import "sidebar";

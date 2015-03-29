@@ -1,29 +1,20 @@
 .content{
   margin-top: 92px;
-  color: $fourth-color;
+  color: $primary-color;
   a{
-    color: $fourth-color;
+    color: $primary-color;
   }
   p{
     font-weight: bold;
     font-size: rem-calc(36);
     line-height: 1.2em;
     a, span{
-      color: $third-color;
+      color: $orange;
       &:nth-child(1n) {
-        color: $third-color;
+        color: $green;
       }
       &:nth-child(2n) {
-        color: $fifth-color;
-      }
-      // &:nth-child(3n) {
-      //   color: $fifth-color;
-      // }
-      // &:nth-child(4n) {
-      //   color: $third-color;
-      // }
-      &:hover{
-        color: $fifth-color;
+        color: $purple;
       }
     }
   }
@@ -36,7 +27,7 @@
       font-weight: bold;
       font-size: rem-calc(24);
       line-height: 1.2em;
-      color: $fourth-color;
+      color: $primary-color;
     }
   }
 
