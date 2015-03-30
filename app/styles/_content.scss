@@ -1,22 +1,35 @@
 .content{
-  margin-top: 92px;
-  color: $primary-color;
+  margin-top: rem-calc(65);
+  color: $oil;
+  section{
+    min-height: 500px;
+    &:nth-child(1n){
+      background: $pink;
+    }
+    &:nth-child(2n){
+      background: $green;
+    }
+    &.opener{
+      background: $green url(../images/bg_opener.jpg) right 0 no-repeat;
+      background-size: cover;
+      transform: scale(-1, 1);
+    }
+    h2{
+      color: $smoke;
+      background: $primary-color;
+    }
+  }
+  h1,h2, h3, h4, h5, h6{
+    color: $green;
+  }
   a{
-    color: $primary-color;
+    color: $oil;
   }
   p{
-    font-weight: bold;
-    font-size: rem-calc(36);
+    // font-weight: bold;
+    font-size: rem-calc(18);
     line-height: 1.2em;
-    a, span{
-      color: $orange;
-      &:nth-child(1n) {
-        color: $green;
-      }
-      &:nth-child(2n) {
-        color: $purple;
-      }
-    }
+    color: $charcoal;
   }
 
   ul{
@@ -27,14 +40,8 @@
       font-weight: bold;
       font-size: rem-calc(24);
       line-height: 1.2em;
-      color: $primary-color;
+      color: $oil;
     }
   }
 
-  section{
-    h2{
-      color: $smoke;
-      background: $primary-color;
-    }
-  }
 }

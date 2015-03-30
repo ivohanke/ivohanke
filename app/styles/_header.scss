@@ -1,9 +1,11 @@
 .top-bar{
   .name h1 a{
-    font-size: 36px;
-    font-weight: bold;
+    color: $smoke;
+    font-family: "Bitter";
+    font-size: 24px;
     span{
-      color: $iron;
+      color: $green;
+      font-size: 24px;
       display: inline !important;
     }
   }
@@ -11,7 +13,8 @@
 
 .top-bar-section{
   ul li a{
-    font-size: 18px;
-    font-weight: bold;
+    font-family: "Bitter";
+    font-size: 14px;
+    font-weight: 100;
   }
 }
