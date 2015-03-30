@@ -1,16 +1,29 @@
-<div class="row">
-  <div class="small-12 column">
-    <h2 id='title'>Projects</h2>
+<section>
+  <div class="row">
+    <div class="small-12 column">
+      <h2 id='title'>Projects</h2>
 
-    <ul>
-      {{#each}}
-        <li>{{#link-to 'project' this}}{{title}}{{/link-to}}</li>
-      {{else}}
-        Sorry, nobody is here.
-      {{/each}}
-    </ul>
+      <ul>
+        {{#each}}
+          <li>{{#link-to 'project' this}}{{title}}{{/link-to}}</li>
+        {{else}}
+          Sorry, nobody is here.
+        {{/each}}
+      </ul>
 
-
-    {{outlet}}
+      {{outlet}}
+    </div>
   </div>
-</div>
+</section>
+<section>
+  <div class="row">
+    <div class="small-12 column">
+      <h2 id='title'>Current Projects</h2>
+      <p>Webauftritt der Fachtagung Nah dran - Wir gestalten Demokratie | Oktober 2011</p>
+      <p>Webauftritt Marks und die Engel - Film- und TV-Produktion | Juni 2011 </p>
+      <p>Relaunch Webauftritt Freie Universität Berlin Freie Universität Berlin | Juni 2011</p>
+      <p>Webauftritt '50 Jahre Mauerbau' Kulturprojekte Berlin GmbH | April 2011</p>
+      <p>Webauftritt des E-Science-Projekts 'Empirische Medienästhetik' Exzellenzcluster 'Languages of Emotion' der Freien Universität Berlin | April 2011</p>
+    </div>
+  </div>
+</section>

@@ -1,47 +1,83 @@
 .content{
   overflow: hidden;
-  color: $oil;
   section{
+    position: relative;
     min-height: 600px;
+    padding: rem-calc(45) 0;
+    color: $oil;
+    // &:before{
+    //   content: '';
+    //   position: absolute;
+    //   bottom: 12%;
+    //   left: 0%;
+    //   width: 120%;
+    //   height: 100%;
+    //   background: $pink;
+    //   // border-radius: 100%;
+    //   transform: rotate(2deg);
+    //   z-index: 0;
+    // }
     &.opener{
       overflow: hidden;
       width: 100%;
       svg{
+        position: absolute;
         width: auto;
         height: 840px;
         margin-top: -160px;
         margin-left: -550px;
-        fill: darken($green, 10%);
+        fill: darken($pink, 7%);
       }
     }
     &:nth-child(1n){
-      background-color: $green;
+      background-color: $pink;
       h2{
-        margin: rem-calc(45) 0;
         color: $orange;
-        font-size: rem-calc(45);
-        text-align: center;
+        font-size: rem-calc(36);
+        // text-align: center;
+      }
+      &:before{
+        content: '';
+        position: absolute;
+        bottom: 12%;
+        left: -10%;
+        width: 120%;
+        height: 100%;
+        background: $pink;
+        // border-radius: 100%;
+        transform: rotate(2deg);
+        z-index: 0;
       }
     }
     &:nth-child(2n){
-      background-color: $smoke; //darken($green, 5%);
+      background-color: $green; //darken($green, 5%);
       h2{
-        margin: rem-calc(45) 0;
         color: $orange;
-        font-size: rem-calc(45);
-        text-align: center;
+        font-size: rem-calc(36);
+        // text-align: center;
+      }
+      &:before{
+        content: '';
+        position: absolute;
+        bottom: 12%;
+        left: 0%;
+        width: 120%;
+        height: 100%;
+        background: $green;
+        // border-radius: 100%;
+        transform: rotate(-2deg);
+        z-index: 0;
       }
     }
-
   }
-  h1,h2, h3, h4, h5, h6{
-    color: $green;
+  h3, h4, h5, h6{
+    color: $yellow;
   }
   a{
     color: $oil;
   }
   p{
-    font-size: rem-calc(24);
+    font-size: rem-calc(18);
     font-weight: 300;
     line-height: 1.2em;
     color: $purple;
@@ -56,6 +92,10 @@
       line-height: 1.2em;
       color: $oil;
     }
+  }
+  .icon{
+    font-size: rem-calc(144);
+    color: $pink;
   }
 
 }

@@ -10,15 +10,24 @@ Project.reopenClass({
   FIXTURES: [
     {
       id: 1,
-      title: 'Bugs Bunny',
+      title: 'Red Bull Unified UX Toolkit',
       description: 'Lorem ipsum dolor sit amet',
+      url: '',
       date: null
 
     },
     {
       id: 2,
-      title: 'Wile E. Coyote',
+      title: 'medperts App',
       description: 'Lorem ipsum dolor sit amet',
+      url: '',
+      date: null
+    },
+    {
+      id: 3,
+      title: 'Message for You',
+      description: 'Lorem ipsum dolor sit amet',
+      url: 'http://message-for-you.com/',
       date: null
     }
   ]
