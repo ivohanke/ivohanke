@@ -1,23 +1,38 @@
 .content{
-  margin-top: rem-calc(65);
+  overflow: hidden;
   color: $oil;
   section{
-    min-height: 500px;
+    min-height: 600px;
+    &.opener{
+      overflow: hidden;
+      width: 100%;
+      svg{
+        width: auto;
+        height: 840px;
+        margin-top: -160px;
+        margin-left: -550px;
+        fill: darken($green, 10%);
+      }
+    }
     &:nth-child(1n){
-      background: $pink;
+      background-color: $green;
+      h2{
+        margin: rem-calc(45) 0;
+        color: $orange;
+        font-size: rem-calc(45);
+        text-align: center;
+      }
     }
     &:nth-child(2n){
-      background: $green;
+      background-color: $smoke; //darken($green, 5%);
+      h2{
+        margin: rem-calc(45) 0;
+        color: $orange;
+        font-size: rem-calc(45);
+        text-align: center;
+      }
     }
-    &.opener{
-      background: $green url(../images/bg_opener.jpg) right 0 no-repeat;
-      background-size: cover;
-      transform: scale(-1, 1);
-    }
-    h2{
-      color: $smoke;
-      background: $primary-color;
-    }
+
   }
   h1,h2, h3, h4, h5, h6{
     color: $green;
@@ -26,10 +41,10 @@
     color: $oil;
   }
   p{
-    // font-weight: bold;
-    font-size: rem-calc(18);
+    font-size: rem-calc(24);
+    font-weight: 300;
     line-height: 1.2em;
-    color: $charcoal;
+    color: $purple;
   }
 
   ul{
@@ -37,7 +52,6 @@
     margin: 0;
     li a{
       color: $smoke;
-      font-weight: bold;
       font-size: rem-calc(24);
       line-height: 1.2em;
       color: $oil;
