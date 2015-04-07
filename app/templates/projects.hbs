@@ -4,21 +4,19 @@
       <h2 id='title'>Projects</h2>
 
       <ul>
-        {{#each}}
-          <li>{{#link-to 'project' this}}{{title}}{{/link-to}}</li>
+        {{#each project in model}}
+          <li>{{#link-to 'project' project}}{{project.title}}{{/link-to}}</li>
         {{else}}
-          Sorry, nobody is here.
+          Sorry, no project yet.
         {{/each}}
       </ul>
-
-      {{outlet}}
     </div>
   </div>
 </section>
 <section>
   <div class="row">
     <div class="small-12 column">
-      <h2 id='title'>Current Projects</h2>
+      <h2 id='title'>Client Projects</h2>
       <p>Webauftritt der Fachtagung Nah dran - Wir gestalten Demokratie | Oktober 2011</p>
       <p>Webauftritt Marks und die Engel - Film- und TV-Produktion | Juni 2011 </p>
       <p>Relaunch Webauftritt Freie Universität Berlin Freie Universität Berlin | Juni 2011</p>
