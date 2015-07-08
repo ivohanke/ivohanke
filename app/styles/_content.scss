@@ -1,3 +1,12 @@
+.f-topbar-fixed{
+  .content {
+    transition: all 1s;
+    margin-top: -200px;
+  }
+
+}
+
+
 .content{
   section{
     position: relative;
@@ -6,7 +15,7 @@
     color: $oil;
     background-color: $smoke;
     h2{
-      color: $base;
+      color: $iron;
       font-size: rem-calc(36);
     }
     &.opener{
@@ -56,7 +65,7 @@
     }
   }
   h3, h4, h5, h6{
-    color: $yellow;
+    color: $jumbo;
   }
   a{
     color: $oil;

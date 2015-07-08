@@ -1,10 +1,16 @@
 .header-bar{
-  // margin-top: 500px;
+  padding-top: 200px;
+  transition: all 1s;
   &.fixed{
-    box-shadow: 0 3px 7px rgba($green, .3);
+    padding-top: 0;
+    box-shadow: 0 5px 10px rgba($green, .3);
+    // border-bottom: 1px solid $green;
     .top-bar .name h1 a, .top-bar .name h1 span {
       font-size: rem-calc(24);
       text-transform: uppercase;
+    }
+    .top-bar-section{
+      opacity: 1;
     }
   }
   .top-bar{
@@ -12,10 +18,9 @@
       outline: none;
       color: $green;
       font-family: "DIN Next LT W04 Bold Condensed";
-      font-size: rem-calc(36);
+      font-size: rem-calc(48);
       text-transform: uppercase;
-      transition: all .3s;
-      transition: font-size .9s;
+      transition: all .9s;
       &:hover{
         color: darken($green, 5%);
         span{
@@ -23,16 +28,17 @@
         }
       }
       span{
-        transition: all .3s;
-        transition: font-size .9s;
+        transition: all .9s;
         color: $base;
-        font-size: rem-calc(36);
+        font-size: rem-calc(48);
         display: inline !important;
       }
     }
   }
 
   .top-bar-section{
+    transition: all .9s;
+    opacity: 0;
     ul li{
       transition: all .3s;
       &:hover{
