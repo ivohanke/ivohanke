@@ -1,20 +1,54 @@
-.top-bar{
-  .name h1 a{
-    color: $smoke;
-    font-family: "Bitter";
-    font-size: 24px;
-    span{
-      color: $green;
-      font-size: 24px;
-      display: inline !important;
+.header-bar{
+  // margin-top: 500px;
+  &.fixed{
+    box-shadow: 0 3px 7px rgba($green, .3);
+    .top-bar .name h1 a, .top-bar .name h1 span {
+      font-size: rem-calc(24);
+      text-transform: uppercase;
     }
   }
-}
+  .top-bar{
+    .name h1 a{
+      outline: none;
+      color: $green;
+      font-family: "DIN Next LT W04 Bold Condensed";
+      font-size: rem-calc(36);
+      text-transform: uppercase;
+      transition: all .3s;
+      transition: font-size .9s;
+      &:hover{
+        color: darken($green, 5%);
+        span{
+          color: darken($base, 5%);
+        }
+      }
+      span{
+        transition: all .3s;
+        transition: font-size .9s;
+        color: $base;
+        font-size: rem-calc(36);
+        display: inline !important;
+      }
+    }
+  }
 
-.top-bar-section{
-  ul li a{
-    font-family: "Bitter";
-    font-size: 14px;
-    font-weight: 100;
+  .top-bar-section{
+    ul li{
+      transition: all .3s;
+      &:hover{
+        a{
+          background: transparent !important;
+          color: darken($iron, 5%);
+        }
+      }
+      a{
+        outline: none;
+        transition: all .6s;
+        color: $iron;
+        text-transform: uppercase;
+        font-family: "DIN Next LT W04 Bold Condensed";
+        font-size: rem-calc(24);
+      }
+    }
   }
 }

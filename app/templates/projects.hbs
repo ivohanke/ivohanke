@@ -4,7 +4,7 @@
       <h2 id='title'>Projects</h2>
 
       <ul>
-        {{#each project in model}}
+        {{#each model as |project|}}
           <li>{{#link-to 'project' project}}{{project.title}}{{/link-to}}</li>
         {{else}}
           Sorry, no project yet.
@@ -13,7 +13,7 @@
     </div>
   </div>
 </section>
-<section>
+<!-- <section>
   <div class="row">
     <div class="small-12 column">
       <h2 id='title'>Client Projects</h2>
@@ -24,4 +24,4 @@
       <p>Webauftritt des E-Science-Projekts 'Empirische Medienästhetik' Exzellenzcluster 'Languages of Emotion' der Freien Universität Berlin | April 2011</p>
     </div>
   </div>
-</section>
+</section> -->

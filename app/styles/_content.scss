@@ -1,72 +1,57 @@
 .content{
-  overflow: hidden;
   section{
     position: relative;
-    min-height: 600px;
+    min-height: 800px;
     padding: rem-calc(45) 0;
     color: $oil;
-    // &:before{
-    //   content: '';
-    //   position: absolute;
-    //   bottom: 12%;
-    //   left: 0%;
-    //   width: 120%;
-    //   height: 100%;
-    //   background: $pink;
-    //   // border-radius: 100%;
-    //   transform: rotate(2deg);
-    //   z-index: 0;
-    // }
-    &.opener{
-      overflow: hidden;
-      width: 100%;
-      svg{
-        position: absolute;
-        width: auto;
-        height: 840px;
-        margin-top: -160px;
-        margin-left: -550px;
-        fill: darken($pink, 4%);
-      }
+    background-color: $smoke;
+    h2{
+      color: $base;
+      font-size: rem-calc(36);
     }
-    &:nth-child(1n){
-      background-color: $pink;
-      h2{
-        color: $orange;
-        font-size: rem-calc(36);
-        // text-align: center;
-      }
-      &:before{
-        content: '';
-        position: absolute;
-        bottom: 12%;
-        left: -10%;
-        width: 120%;
-        height: 100%;
-        background: $pink;
-        // border-radius: 100%;
-        transform: rotate(2deg);
-        z-index: 0;
-      }
+    &.opener{
+      // svg{
+      //   position: absolute;
+      //   width: auto;
+      //   height: 840px;
+      //   margin-top: -160px;
+      //   margin-left: -550px;
+      //   fill: darken($neonyellow, 4%);
+      // }
+      // &:nth-child(1){
+      //   &:before{
+      //     content: '';
+      //     position: absolute;
+      //     bottom: 12%;
+      //     left: -20%;
+      //     width: 150%;
+      //     height: 100%;
+      //     background: $yellow url(../images/portrait.jpg) 0 0 no-repeat;
+      //     background-size: 120%;
+      //     background-position: -300px -300px;
+      //     // border-radius: 100%;
+      //     transform: rotate(-2deg);
+      //     z-index: 0;
+      //   }
+      // }
     }
     &:nth-child(2n){
-      background-color: $green; //darken($green, 5%);
-      h2{
-        color: $orange;
-        font-size: rem-calc(36);
-        // text-align: center;
-      }
       &:before{
         content: '';
         position: absolute;
         bottom: 12%;
-        left: 0%;
-        width: 120%;
+        left: -20%;
+        width: 150%;
         height: 100%;
-        background: $green;
+        background: rgba($green, 1);
         // border-radius: 100%;
         transform: rotate(-2deg);
         z-index: 0;
+      }
+    }
+    &:nth-child(4n){
+      &:before{
+        transform: rotate(-2deg);
       }
     }
   }
@@ -80,7 +65,7 @@
     font-size: rem-calc(18);
     font-weight: 300;
     line-height: 1.2em;
-    color: $purple;
+    color: $jumbo;
   }
 
   ul{
@@ -98,7 +83,7 @@
     color: $pink;
   }
 
-  $cube-color: lighten($pink, 5%);
+  $cube-color: lighten($green, 5%);
   $cube-size: 100px;
   $animation-duration: 1.2s;
 
@@ -163,6 +148,19 @@
           background: lighten($cube-color, 8%);
         }
       }
+    }
+  }
+  .brands{
+    padding-top: rem-calc(45);
+    img{
+      max-width: 150px;
+      height: 100px;
+      margin: 0 rem-calc(45) rem-calc(45) 0;
+      stroke: $green;
+      fill: $green;
+    }
+    #svg9402{
+      fill: green;
     }
   }
 }

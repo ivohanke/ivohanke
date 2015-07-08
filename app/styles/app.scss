@@ -1,9 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Bitter:400,700);;
-@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700);
-
 @import "settings";
 
 @import "foundation";
+
+@import "fonts";
 
 @import "header";
 @import "video";
@@ -19,11 +18,6 @@
   margin-right: auto;
   max-width: initial;
 }
-
-// html, body{
-//   background: url(images/background.png) no-repeat;
-//   background-size: 100% auto;
-// }
 
 // p{
 //   font-size: 44px;

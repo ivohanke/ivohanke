@@ -1,3 +1,3 @@
-# Ivo Hanke
+# Ivohanke
 
-## My personal website
+This is my website, please enjoy http://ivohanke.de
