@@ -1,6 +1,6 @@
 .header-bar{
-  padding-top: 200px;
-  transition: all 1s;
+  padding-top: 66px;
+  transition: all .3s;
   &.fixed{
     padding-top: 0;
     box-shadow: 0 5px 10px rgba($green, .3);
@@ -20,15 +20,15 @@
       font-family: "DIN Next LT W04 Bold Condensed";
       font-size: rem-calc(48);
       text-transform: uppercase;
-      transition: all .9s;
+      transition: all .3s;
       &:hover{
         color: darken($green, 5%);
         span{
-          color: darken($base, 5%);
+          color: darken($aluminum, 5%);
         }
       }
       span{
-        transition: all .9s;
+        transition: all .3s;
         color: $base;
         font-size: rem-calc(48);
         display: inline !important;
@@ -37,8 +37,8 @@
   }
 
   .top-bar-section{
-    transition: all .9s;
-    opacity: 0;
+    transition: all .3s;
+    // opacity: 0;
     ul li{
       transition: all .3s;
       &:hover{
@@ -48,12 +48,22 @@
         }
       }
       a{
+        position: relative;
         outline: none;
-        transition: all .6s;
+        transition: all .3s;
         color: $iron;
         text-transform: uppercase;
         font-family: "DIN Next LT W04 Bold Condensed";
+        font-weight: 200;
         font-size: rem-calc(24);
+        vertical-align: bottom;
+        span{
+          transition: all .3s;
+        }
+        &.active{
+          color: $green;
+          transform: rotate(-90deg) translateX(-20px) scale(1.1);
+        }
       }
     }
   }

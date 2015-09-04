@@ -1,6 +1,10 @@
 footer{
-  padding: rem-calc(12) 0;
-  background-color: $base;
-  color: $smoke;
-  font-size: rem-calc(12);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: rem-calc(12);
+  // background-color: #707583;
+  background: rgba($green, 1);
+  // background: linear-gradient(25deg, #28d4b4 40%,#aaaaaa 70%); /* W3C */
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28d4b4', endColorstr='#aaaaaa',GradientType=1 );
 }

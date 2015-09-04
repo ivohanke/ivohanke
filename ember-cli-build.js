@@ -8,6 +8,10 @@ module.exports = function(defaults) {
       'modernizr': true,
       'fastclick': true,
       'foundationJs': 'all'
+    },
+    'autoprefixer': {
+      'browsers': ['> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1'],
+      'cascade': false
     }
   });
 

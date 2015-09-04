@@ -11,6 +11,11 @@
 @import "sidebar";
 @import "footer";
 
+html, body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 
 .full-width {
   width: 100%;
@@ -27,9 +32,11 @@
 
 
 ::-moz-selection {
-  background: $pink;
+  color: $smoke;
+  background: $green;
 }
 
 ::selection {
-  background: $pink;
+  color: $smoke;
+  background: $green;
 }

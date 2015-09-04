@@ -94,7 +94,7 @@ $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
-// $font-weight-normal: normal;
+$font-weight-thin: 300;
 // $font-weight-bold: bold;
 
 $white       : #FFFFFF;
@@ -132,10 +132,10 @@ $warning-color  : #f08a24;
 $info-color     : #a0d3e8;
 
 // We use these to control various global styles
-$body-bg: $iron;
-// $body-font-color: $jet;
+$body-bg: $smoke;
+$body-font-color: $aluminum;
 // $body-font-family: $font-family-sans-serif;
-// $body-font-weight: $font-weight-normal;
+$body-font-weight: $font-weight-thin;
 // $body-font-style: normal;
 
 // We use this to control font-smoothing
@@ -204,14 +204,14 @@ $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (m
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-$header-font-family: 'DIN Next LT W04 Bold Condensed';
-// $header-font-weight: 700;
+// $header-font-family: 'DIN Next LT W04 Bold Condensed';
+$header-font-weight: 200;
 // $header-font-style: normal;
-// $header-font-color: $jet;
+$header-font-color: $iron;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
-// $header-text-rendering: optimizeLegibility;
+$header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
 $h1-font-size: rem-calc(36);

@@ -1,13 +1,13 @@
 <section>
   <div class="row">
     <div class="small-12 column">
-      <h2 id='title'>Projects</h2>
+      <h2 id='title'>Work</h2>
 
       <ul>
         {{#each model as |project|}}
           <li>{{#link-to 'project' project}}{{project.title}}{{/link-to}}</li>
         {{else}}
-          Sorry, no project yet.
+          <li>Sorry, no project yet.</li>
         {{/each}}
       </ul>
     </div>
