@@ -1,26 +1,19 @@
 .header-bar{
-  padding-top: 66px;
+  padding-top: 0;
   transition: all .3s;
-  &.fixed{
-    padding-top: 0;
-    box-shadow: 0 5px 10px rgba($green, .3);
-    // border-bottom: 1px solid $green;
-    .top-bar .name h1 a, .top-bar .name h1 span {
-      font-size: rem-calc(24);
-      text-transform: uppercase;
-    }
-    .top-bar-section{
-      opacity: 1;
-    }
-  }
   .top-bar{
+    // transition: all .3s;
+    &.expanded{
+      margin-bottom: rem-calc(48);
+    }
     .name h1 a{
       outline: none;
       color: $green;
       font-family: "DIN Next LT W04 Bold Condensed";
-      font-size: rem-calc(48);
+      font-size: rem-calc(24);
       text-transform: uppercase;
       transition: all .3s;
+      padding: 0 rem-calc(10);
       &:hover{
         color: darken($green, 5%);
         span{
@@ -30,7 +23,7 @@
       span{
         transition: all .3s;
         color: $base;
-        font-size: rem-calc(48);
+        font-size: rem-calc(24);
         display: inline !important;
       }
     }
@@ -48,6 +41,8 @@
         }
       }
       a{
+        padding-top: 0;
+        padding-bottom: 0;
         position: relative;
         outline: none;
         transition: all .3s;
@@ -57,12 +52,46 @@
         font-weight: 200;
         font-size: rem-calc(24);
         vertical-align: bottom;
+        width: rem-calc(120px);
         span{
           transition: all .3s;
         }
         &.active{
           color: $green;
-          transform: rotate(-90deg) translateX(-20px) scale(1.1);
+        }
+      }
+    }
+  }
+  @media #{$medium-up}{
+    .top-bar{
+      .name h1 a{
+        font-size: rem-calc(36);
+        span{
+          font-size: rem-calc(36);
+        }
+      }
+    }
+  }
+  @media #{$large-up}{
+    padding-top: rem-calc(48);
+    .top-bar{
+      &.expanded{
+        margin-bottom: 0;
+      }
+      .name h1 a{
+        font-size: rem-calc(48);
+        span{
+          font-size: rem-calc(48);
+        }
+      }
+    }
+    .top-bar-section{
+      ul li{
+        a{
+          &.active{
+            text-align: right;
+            transform: rotate(-90deg) translateX(-32px) scale(1.1);
+          }
         }
       }
     }

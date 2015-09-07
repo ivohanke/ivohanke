@@ -205,7 +205,7 @@ $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (m
 
 // We use these to control header font styles
 // $header-font-family: 'DIN Next LT W04 Bold Condensed';
-$header-font-weight: 200;
+$header-font-weight: 500;
 // $header-font-style: normal;
 $header-font-color: $iron;
 // $header-line-height: 1.4;
@@ -264,8 +264,8 @@ $h6-font-size: 1rem;
 // We use these to style anchors
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
-// $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -14%);
+$anchor-font-color: $green;
+$anchor-font-color-hover: darken($anchor-font-color, 10%);
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
