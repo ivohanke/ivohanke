@@ -8,7 +8,7 @@ module.exports = function(environment) {
     locationType: 'auto',
     contentSecurityPolicy: {
       'default-src': "'none'",
-      'script-src': "'self' 'unsafe-eval' 'unsafe-inline'",
+      'script-src': "'self' 'unsafe-eval' 'unsafe-inline' http://www.google-analytics.com https://www.google-analytics.com",
       'font-src': "'self' 'unsafe-inline' http://fonts.gstatic.com http://fast.fonts.net",
       'img-src': "'self'",
       'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com  http://fast.fonts.net", // Allow inline styles and loaded CSS from http://fonts.googleapis.com
